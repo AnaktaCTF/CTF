@@ -39,12 +39,12 @@ SQL-запрос изменится следующим образом:
 Теперь давайте закрепим теорию на практике и попробуем выполнить несколько упражнений по эксплуатированию SQL-инъекций, для этого воспользуемся следующим бесплатным сервисом: (https://sql.training.hackerdom.ru/) Попробуйте выполнить их самостоятельно ниже будет разбор данных заданий.
 
 ### Задание 1.
-![image](https://github.com/user-attachments/assets/c99948ea-c84b-4d3d-b24d-0caa07546be7)
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/Shurub%20Igor%20201-331/XSS/1.png)
 
 Пояснение: выполняем запрос к БД users, выводя данные для строки 12, обращаем внимание, что ссылка выглядит следующим образом: https://sql.training.hackerdom.ru/1.php?text=SELECT+*+FROM+users+WHERE+id%3D12
 
 ### Задание 2.
-![image](https://github.com/user-attachments/assets/901a1edf-ef4f-46c9-8bcd-6e22b1ec61cf)
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/Shurub%20Igor%20201-331/XSS/2.png)
 
 Пояснение: 
 Нам дана подсказка использовать кавычку, этим и воспользуемся. 
@@ -53,13 +53,13 @@ SQL-запрос изменится следующим образом:
 
 
 ### Задание 3.
-![image](https://github.com/user-attachments/assets/3335da40-4df9-495b-889a-1e49a85b4f41)
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/Shurub%20Igor%20201-331/XSS/3.png)
 
 Пояснение: 
 Видим, что по сравнению с предыдущим заданием присутствует условие limit 1 - ограничение на вывод в 1 строку. Выйти из этой ситуации можно следующим образом, добавляем комментарий, например --hello, limit 1 уберет его (комментарий), но при этом выведет нужную нам строку с id=13. https://sql.training.hackerdom.ru/3sdjjy.php?text=text%3D%27-1+or++id%3D%2713+%27--+123
 
 ### Задание 4.
-![image](https://github.com/user-attachments/assets/721f0505-9fb0-455c-9718-f03d6c1c317f)
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/Shurub%20Igor%20201-331/XSS/4.png)
 
 Пояснение: 
 Нам дано две таблицы и запрос по умолчанию будет выполнен не к той таблице, которая нам нужна. Чтобы выйти из данной ситуации воспользуемся оператором UNION, позволяющий выполнять запросы к разным таблицам в рамках одного запроса. Для использования объединения запросов важно, чтобы количество полей во всех объединённых запросах совпадало. Также учитываем, что по условию нам нужно получить данные из таблицы sercet, где значение поля ggg равно abc. https://sql.training.hackerdom.ru/4qjqhweh.php?text=-1%27+union+select+*+from+secret+where+ggg%3D%27abc%27+--+123
