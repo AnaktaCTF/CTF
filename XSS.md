@@ -159,7 +159,58 @@ XSS позволяет обойти SOP. Поэтому для защиты от
 
 ![image](https://github.com/AnaktaCTF/CTFReports/blob/main/zadnepryanskayaalicia/materials/19.png)
 
-Защита от атак DOM Based XSS похожа на другие, но есть дополнительные аспекты, которые нужно учесть. Для защиты от данного типа атак необходимо выполнить следующее: 
-* 	 Внедрить и оптимизировать политику безопасности контента Content Security Policy (CSP), необходимо учитывать, что существуют обхода CSP.
-*  	Обязательно  производить проверку (фильтрацию) данных, особенно в критичных местах (например url, location, referer), т.к. они связаны с объектами DOM.
-* 	Использовать IPS (Intrusion Prevention System, система предотвращения вторжений) — программная или аппаратная система сетевой безопасности, предназначенная для обнаружения несанкционированных действий и атак, а также автоматизированного противодействия им. 
+### Задание 4.
+Наличие XSS вектора, который использует событие onerror, на странице  XSS – Reflected GET проекта bWAPP.
+
+Перейдем на страницу XSS – Reflected GET проекта bWAPP:
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/zadnepryanskayaalicia/materials/20.png)
+
+Реализуем простой HTML-контекст, используя событие onerror. Контекст возникает в теле существующего HTML-тега или в начале и в конце страницы вне тега <html>. В этом контексте вместо данных можно вписать валидный HTML любого рода, и он немедленно будет воспроизведен браузером. Например, такой: <img src=x onerror= alert(document.cookie)>:
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/zadnepryanskayaalicia/materials/21.png)
+
+Это и есть простой HTML-контекст внедрения XSS. В рамках него пользовательский ввод будет выполнен с выполнением всего форматирования:
+
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/zadnepryanskayaalicia/materials/22.png)
+
+Для защиты от данного типа необходимо выполнить следующее:
+*   Внедрить политику безопасности контента Content Security Policy (CSP)
+*  	Производить проверку (фильтрацию) данных, которые передаются
+
+### Задание 5.
+Уязвимость XSS на странице XSS – Stored (Coookies) проекта bWAPP на простом (Low) уровне сложности.
+
+Перейдем на страницу XSS – Stored (Coookies) проекта bWAPP:
+
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/zadnepryanskayaalicia/materials/23.png)
+
+Настроим Proxy в браузере:
+
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/zadnepryanskayaalicia/materials/24.png)
+
+Запустим утилиту BurpSuite:
+
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/zadnepryanskayaalicia/materials/25.png)
+
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/zadnepryanskayaalicia/materials/26.png)
+
+На сайте выберем любимый жанр (например, Science Fiction):
+
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/zadnepryanskayaalicia/materials/27.png)
+
+Перейдем в BurpSuite:
+
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/zadnepryanskayaalicia/materials/28.png)
+
+Поменяем выбранный жанр sci-fi на Comedy (при этом в cookie пока нет значения movie_genry) и отправим запрос (Forward):
+
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/zadnepryanskayaalicia/materials/29.png)
+
+Выберем снова жанр:
+
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/zadnepryanskayaalicia/materials/30.png)
+
+Как мы видим, жанр Comedy отобразился в cookie:
+
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/zadnepryanskayaalicia/materials/31.png)
+
+
