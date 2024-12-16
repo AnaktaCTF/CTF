@@ -22,5 +22,5 @@
 4. Использование менее уязвимых форматов (JSON)
 
 ### Материалы для изучения:
-https://github.com/payloadbox/xxe-injection-payload-list - payload для XXE
-https://portswigger.net/web-security/xxe - Тренировачнные лабы и более подробная информация по XXE
+1. https://github.com/payloadbox/xxe-injection-payload-list - payload для XXE 
+2. https://portswigger.net/web-security/xxe - Тренировачнные лабы и более подробная информация по XXE
