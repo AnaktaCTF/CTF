@@ -36,7 +36,7 @@
 ---
 
 ## 1. Тунелирование Соединений
-![image](https://github.com/AnaktaCTF/CTFReports/blob/main/zadnepryanskayaalicia/materials/1.png)
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/Nnnikitosss/Picture/1.png)
 
 ### 1.1 Введение в Тунелирование Соединений
 
