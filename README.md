@@ -35,6 +35,7 @@
 
 ### PWN
 * [Процесс и поток](/PWN/Процесс%20и%20поток.md)
+* [Privilege Escalation](/PWN/privilege_escalation.md)
 
 ### Misc
 * [Организация управляемого доступа в ОС Windows](/Misc/Организация%20управляемого%20доступа%20в%20ОС%20Windows.md)
