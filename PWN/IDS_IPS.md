@@ -139,13 +139,3 @@ IPS (Intrusion Prevention System) выполняет схожие функции
 ## Заключение 
 
 Обход IDS/IPS систем — это сложная и постоянно развивающаяся область кибербезопасности. Злоумышленники используют различные методы для обхода обнаружения, и понимание этих методов является ключевым для защиты сетей. Задачи CTF помогают оттачивать навыки и понимать, как работают эти техники на практике. Постоянное обновление знаний и использование передовых методов защиты позволяют снизить риск успешных атак и обеспечить безопасность сети.
-## Источники
-<https://habr.com/ru/search/?target_type=posts&order=relevance&q=[ids]>
-
-<https://elibrary.ru/item.asp?id=75113233>
-
-<https://xakep.ru/2005/12/05/29023/>
-
-<https://www.youtube.com/watch?v=0GrFKYcDx3A>
-
-<https://infars.ru/blog/obnaruzhenie-i-predotvrashchenie-vtorzheniy-idsips-kak-eto-rabotaet/>
