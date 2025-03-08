@@ -43,6 +43,8 @@
 * [Туннелирование Соединений](/Misc/tunneling_of_connections.md)
 * [Тестирование почтовых протоколов SMTP, POP3, IMAP](/Misc/Postal_Protocols.md)
 * [Авторизация через SSH: как устроен SSH-сервер, ключи аутентификации и PAM-аутентификация](/Misc/SSH.md)
+* [WinRM в пентесте](/Misc/WinRM_in_pentest.md)
+* [Атака Kerberoasting](/Misc/Kerberoasting.md)
 
 ### WriteUps
 * [WriteUp с Capture the Intruder (CTI)](/WriteUps/CTI_writeup.md)  
