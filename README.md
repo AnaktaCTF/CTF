@@ -20,6 +20,7 @@
 * [Работа с API в CTF: безопасность и уязвимости](/WEB/working%20with%20API.md)
 * [Уязвимость XXE при парсинге XML](/WEB/XXE_Guide.md)
 * [SQL-инъекция](/WEB/SQL%20Injection.md)
+* [JWT безопасность и взлом](/WEB/JWT_testing.md)
 
 
 ### Форензика
