@@ -46,6 +46,7 @@
 * [Авторизация через SSH: как устроен SSH-сервер, ключи аутентификации и PAM-аутентификация](/Misc/SSH.md)
 * [WinRM в пентесте](/Misc/WinRM_in_pentest.md)
 * [Атака Kerberoasting](/Misc/Kerberoasting.md)
+* [Пенетест облачной инфраструктуры](/Misc/Cloud%20CTF.md)
 
 ### WriteUps
 * [WriteUp с Capture the Intruder (CTI)](/WriteUps/CTI_writeup.md)  
