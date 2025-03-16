@@ -33,6 +33,7 @@
 * [Введение в GeoINT](/OSINT/GeoINT_article.md)  
 Здесь вы узнаете про Геопространственную разведку (GeoINT) - виды разведки, как применять с примерами и полезныцми ссылками.
 * [Google Dorks. Основы.](/OSINT/introduction-to-googledorks.md)
+* [Обзор инструментов для OSINT](/OSINT/osint-instruments.md)
 
 ### Стеганография
 
