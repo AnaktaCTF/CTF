@@ -38,7 +38,9 @@
 * [Обзор инструментов для OSINT](/OSINT/osint-instruments.md)
 
 ### Стеганография
-
+* [Стеганография в звуковых файлах](/steganography/audio_steganography.md)
+* [Стеганография в изображении](/steganography/image_steganography.md)
+  
 ### PWN
 * [Процесс и поток](/PWN/Процесс%20и%20поток.md)
 * [Privilege Escalation](/PWN/privilege_escalation.md)
