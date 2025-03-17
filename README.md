@@ -23,6 +23,8 @@
 * [SQL-инъекция](/WEB/SQL%20Injection.md)
 * [JWT безопасность и взлом](/WEB/JWT_testing.md)
 * [Безопасность и эксплуатация GraphQL](WEB/GraphQL.md)
+* [Безопасность и уязвимости Смарт-Контрактов](/WEB/Smart-contracts_OWASP_TOP10.md)
+* [Атаки реентерабельности в смарт-контрактах SC05:2025 - Reentrancy](/WEB/Reentrancy_Smart-Contract_Vulnerability.md)
 
 ### Форензика
 * [Основные этапы процесса реагирования на инциденты ИБ](/Forensic/Основные%20этапы%20процесса%20реагирования%20на%20инциденты%20ИБ.md)
