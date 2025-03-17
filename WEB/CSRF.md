@@ -131,3 +131,9 @@ CSRF — опасная уязвимость, которая позволяет 
 
 ## 8. Где можно потренироваться?
 Вы можете попрактиковаться в нахождении и эксплуатации CSRF-уязвимостей на платформе **PortSwigger Web Security Academy**, где представлены различные сценарии атак и защиты.(https://portswigger.net/web-security/csrf)
+
+## 9. Полезные источники
+Skillfactory "CSRF": https://blog.skillfactory.ru/glossary/csrf/
+Хабр "Безопасность в деталях: исследование cистемы защиты от CSRF": https://habr.com/ru/companies/banki/articles/759058/
+
+
