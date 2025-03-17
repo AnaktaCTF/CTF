@@ -88,17 +88,17 @@ def encode_lsb(wav_in, message, wav_out):
 
 Для примера взята задача [WAV - Spectral analysis](https://www.root-me.org/ru/Zadachi-i-problemy/Steganografiya/Audio-stegano).
 
-![](pictures/22.5.png)
+![](https://github.com/AnaktaCTF/CTFReports/blob/main/e1409/pictures/22.5.png)
 
 Для спектрального анализа можно использовать различные инструменты, например инструмент [Sonic visualizer](https://www.sonicvisualiser.org/download.html) или сайт для декодирования [dcode](https://www.dcode.fr/spectral-analysis). В решении примера буду использовать 2 вариант.
 
 Загружаем файл и получаем изображение с флагом:
 
-![](pictures/22.6.png)
+![](https://github.com/AnaktaCTF/CTFReports/blob/main/e1409/pictures/22.6.png)
 
 Задача решена.
 
-![](pictures/22.7.png)
+![](https://github.com/AnaktaCTF/CTFReports/blob/main/e1409/pictures/22.7.png)
 
 
 ### Spread Spectrum – Рассеивание сигнала
