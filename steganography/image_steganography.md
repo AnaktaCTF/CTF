@@ -78,9 +78,9 @@ EXIF - это информация, записываемая в файл сни�
 
 Как пример, можно узнать место, в котором был сделан снимок:
 
-![](pictures/ct1.jpg)
+![](https://github.com/AnaktaCTF/CTFReports/blob/main/e1409/pictures/ct1.jpg)
 
-![](pictures/ct2.png)
+![](https://github.com/AnaktaCTF/CTFReports/blob/main/e1409/pictures/ct2.png)
 
 Узнаем, что снимок был сделан по адресу Place des Capucines, Belsunce, Marseille 1er Arrondissement, Марсель, Marseille, Буш-дю-Рон, Прованс — Альпы — Лазурный Берег, Метрополия Франции, 13001, Франция.
 
@@ -132,19 +132,19 @@ EXIF - это информация, записываемая в файл сни�
 
 С помощью Stegsolve можно посмотреть формат файла
 
-![](pictures/ct3.png)
+![](https://github.com/AnaktaCTF/CTFReports/blob/main/e1409/pictures/ct3.png)
 
 Разные планы файла 
 
-![](pictures/ct4.png)
+![](https://github.com/AnaktaCTF/CTFReports/blob/main/e1409/pictures/ct4.png)
 
 Открыть несколько изображений и посмотреть из наложения:
 
-![](pictures/ct5.png)
+![](https://github.com/AnaktaCTF/CTFReports/blob/main/e1409/pictures/ct5.png)
 
 Посмотреть режимы файла
 
-![](pictures/ct6.png)
+![](https://github.com/AnaktaCTF/CTFReports/blob/main/e1409/pictures/ct6.png)
 
 ## Использование шумов и артефактов сжатия
 ### Принцип работы
