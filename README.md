@@ -65,6 +65,7 @@
 
 ### RealLife
 * [Безопасность Wi-Fi сетей: Перехват хендшейков](/RealLife/Capturing_WiFi_Handshakes.md)
+* [Безопасность Wi-Fi сетей: Evil Twin](/RealLife/Evil_Twin_Wifi.md)
 
 ## Полезные ресурсы
 
