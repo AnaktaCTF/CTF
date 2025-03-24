@@ -31,6 +31,7 @@
 * [Основные этапы процесса реагирования на инциденты ИБ](/Forensic/Основные%20этапы%20процесса%20реагирования%20на%20инциденты%20ИБ.md)
 * [Особенности NTFS для сокрытия данных](/Forensic/NTFS_features_to_hide_data.md)
 * [DPI Engine](/Forensic/DPI%Engine.md)
+* [Masquerading](/Forensic/Masquerading.md)
 
 ### OSINT
 * 🕵️ [Введение в OSINT](/OSINT/introduction_to_OSINT.md)  
@@ -48,6 +49,7 @@
 * [Процесс и поток](/PWN/Процесс%20и%20поток.md)
 * [Privilege Escalation](/PWN/privilege_escalation.md)
 * [Обход ASLR и DEP в современных эксплойтах](/PWN/Bypassing_ASLR_and_DEP_in_modern_exploits.md)
+* [Credential Dumping](/PWN/Credential_Dumping.md)
 
 ### Misc
 * [Организация управляемого доступа в ОС Windows](/Misc/Организация%20управляемого%20доступа%20в%20ОС%20Windows.md)
