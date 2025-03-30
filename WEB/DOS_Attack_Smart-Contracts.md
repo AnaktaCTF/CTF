@@ -218,6 +218,7 @@ function distributeRewards(address[] memory winners, uint256[] memory amounts) i
 ## Ресурсы
 
 1. Owasp Top 10 Smart-Contracts Vulnerabilitys: https://owasp.org/www-project-smart-contract-top-10/
+
 2.Common Vulnerabilities in Solidity: Denial of Service (DOS): https://www.slowmist.com/articles/solidity-security/Common-Vulnerabilities-in-Solidity-Denial-of-Service-DOS.html
 3. Denial of Service (DoS) Attacks in Smart Contracts:  https://www.nethermind.io/blog/denial-of-service-dos-attacks-in-smart-contracts
 4. Solidity Smart Contract Unbounded Loops DOS Attack Vulnerability Explained with REAL Example: https://medium.com/@JohnnyTime/solidity-smart-contract-unbounded-loops-dos-attack-vulnerability-explained-with-real-example-f4b4aca27c08
