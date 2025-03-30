@@ -26,6 +26,7 @@
 * [Безопасность и уязвимости Смарт-Контрактов](/WEB/Smart-contracts_OWASP_TOP10.md)
 * [Атаки реентерабельности в смарт-контрактах SC05:2025 - Reentrancy](/WEB/Reentrancy_Smart-Contract_Vulnerability.md)
 * [Цифровые сертификаты в SSL/TLS](/WEB/Digital%certificates%in%SSL_TLS.md)
+* [Отказ в обслуживании (Denial of Service SC10:2025, DoS) в смарт-контрактах](/WEB/DOS_Attack_Smart-Contracts.md)
 
 ### Форензика
 * [Основные этапы процесса реагирования на инциденты ИБ](/Forensic/Основные%20этапы%20процесса%20реагирования%20на%20инциденты%20ИБ.md)
