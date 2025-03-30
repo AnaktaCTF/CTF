@@ -50,6 +50,7 @@
 * [Privilege Escalation](/PWN/privilege_escalation.md)
 * [Обход ASLR и DEP в современных эксплойтах](/PWN/Bypassing_ASLR_and_DEP_in_modern_exploits.md)
 * [Credential Dumping](/PWN/Credential_Dumping.md)
+* [Эксплуатация уязвимостей ядра](/PWN/Kernel_Exploitation.md)
 
 ### Misc
 * [Организация управляемого доступа в ОС Windows](/Misc/Организация%20управляемого%20доступа%20в%20ОС%20Windows.md)
