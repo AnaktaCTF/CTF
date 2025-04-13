@@ -63,6 +63,7 @@
 * [WinRM в пентесте](/Misc/WinRM_in_pentest.md)
 * [Атака Kerberoasting](/Misc/Kerberoasting.md)
 * [Пенетест облачной инфраструктуры](/Misc/Cloud%20CTF.md)
+* [Атака AS-REP Roasting](/Misc/AS_REP_Roasting.md)
 
 ### WriteUps
 * [WriteUp с Capture the Intruder (CTI)](/WriteUps/CTI_writeup.md)  
