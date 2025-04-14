@@ -46,6 +46,7 @@
 * [Стеганография в звуковых файлах](/steganography/audio_steganography.md)
 * [Стеганография в изображении](/steganography/image_steganography.md)
 * [Стеганография в сетевом трафике](/steganography/network-steganography.md)
+* [Стеганография в исполняемых файлах](/steganography/executable-steganography.md)
   
 ### PWN
 * [Процесс и поток](/PWN/Процесс%20и%20поток.md)
