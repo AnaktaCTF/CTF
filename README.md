@@ -55,6 +55,7 @@
 * [Credential Dumping](/PWN/Credential_Dumping.md)
 * [Эксплуатация уязвимостей ядра](/PWN/Kernel_Exploitation.md)
 * [Heap Exploitation: Use-After-Free](https://github.com/AnaktaCTF/CTF/blob/main/PWN/UAF.md)
+* [Эксплуатация уязвимостей форматной строки](PWN/Format_String_Exploitation.md)
 
 ### Misc
 * [Организация управляемого доступа в ОС Windows](/Misc/Организация%20управляемого%20доступа%20в%20ОС%20Windows.md)
