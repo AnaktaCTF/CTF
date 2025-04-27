@@ -70,6 +70,7 @@
 * [Атака AS-REP Roasting](/Misc/AS_REP_Roasting.md)
 * [Kerberos](/Misc/Kerberos.md)
 * [Протокол SMB](/Misc/SMB_Protocol.md)
+* [Введение в fuzzing](Misc/fuzzing.md)
 
 ### WriteUps
 * [WriteUp с Capture the Intruder (CTI)](/WriteUps/CTI_writeup.md)  
