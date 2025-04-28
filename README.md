@@ -36,6 +36,7 @@
 * [Masquerading](/Forensic/Masquerading.md)
 
 ### OSINT
+*  [Активное сканирование](/OSINT/Active_Scanning.md) 
 * 🕵️ [Введение в OSINT](/OSINT/introduction_to_OSINT.md)  
 Узнайте об основах Open Source Intelligence (OSINT) - методах сбора и анализа информации из открытых источников.
 * [Введение в GeoINT](/OSINT/GeoINT_article.md)  
