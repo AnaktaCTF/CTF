@@ -35,6 +35,7 @@
 * [Особенности NTFS для сокрытия данных](/Forensic/NTFS_features_to_hide_data.md)
 * [DPI Engine](/Forensic/DPI%Engine.md)
 * [Masquerading](/Forensic/Masquerading.md)
+* [Анализ дампов памяти Windows (Volatility 3 и Python)](/Forensic/Анализ%20дампов%20памяти%20Windows.md)
 
 ### OSINT
 *  [Активное сканирование](/OSINT/Active_Scanning.md) 
