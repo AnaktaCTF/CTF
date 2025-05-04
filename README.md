@@ -73,6 +73,7 @@
 * [Протокол SMB](/Misc/SMB_Protocol.md)
 * [Введение в fuzzing](Misc/fuzzing.md)
 * [Разработка эксплойтов для современных систем Windows](Misc/Exploit-Development-ModernWindowsSystems.md)
+* [Протокол RPC](/Misc/RPC_Protocol.md)
 
 ### WriteUps
 * [WriteUp с Capture the Intruder (CTI)](/WriteUps/CTI_writeup.md)  
