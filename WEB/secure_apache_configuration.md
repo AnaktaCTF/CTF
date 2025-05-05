@@ -1163,12 +1163,12 @@ sudo tail -n 50 /var/log/syslog | grep apparmor
 4.	OWASP Top 10. URL: https://owasp.org/www-project-top-ten/
 5.	Сергей Волох. Ubuntu Linux с нуля. — СПб.: БХВ-Петербург, 2021. — 417 с.
 6.	ModSecurity Handbook. URL: https://modsecurity.org/
-7.	W3Techs - World Wide Web Technology Surveys. URL: https://w3techs. com/
+7.	W3Techs - World Wide Web Technology Surveys. URL: https://w3techs.com/
 8.	Positive Technologies. Актуальные киберугрозы: итоги 2023 года. URL: https://www.ptsecurity.com/ru-ru/research/analytics/
-9.	Куклин Д. Безопасность Apache: краткое руководство. URL: https:// habr.com/ru/articles/145215/
+9.	Куклин Д. Безопасность Apache: краткое руководство. URL: https://habr.com/ru/articles/145215/
 10.	13 советов по усилению безопасности веб-сервера Apache. URL: https://blog.sedicomm.com/2020/03/17/13-sovetov-po-usileniyu-bezopasnosti-
-11.	Как установить и настроить веб-сервер Apache. URL: https://selectel. ru/blog/tutorials/how-to-install-and-configure-apache-web-server/
-12.	Защита веб-серверов от XSS и SQL-инъекций. URL: https://support. kaspersky.com/help/Corporate_App_Catalog/TR1/ru-RU/248893.htm
+11.	Как установить и настроить веб-сервер Apache. URL: https://selectel.ru/blog/tutorials/how-to-install-and-configure-apache-web-server/
+12.	Защита веб-серверов от XSS и SQL-инъекций. URL: https://support.kaspersky.com/help/Corporate_App_Catalog/TR1/ru-RU/248893.htm
 13.	Оптимизация Apache для высокой производительности. URL: https://habr.com/ru/articles/148489/
 14.	Анализ логов Apache для обеспечения безопасности. URL: https:// habr.com/ru/sandbox/21382/
 15.	Безопасность веб-серверов с mod_rewrite. URL: https://habr.com/ru/ articles/509122/
