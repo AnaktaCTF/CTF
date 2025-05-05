@@ -51,96 +51,127 @@ http://example.com/download?file=../../../../etc/passwd
 http://example.com/download?file=%2e%2e%2f%2e%2e%2fetc%2fpasswd
 ```
 
-## Примеры уязвимости Path Traversal
+## Подробные примеры эксплуатации
 
-### Пример 1: Скачивание отчётов
+### Пример 1: Скачивание файлов
 
-```
-http://example.com/download?file=report.pdf
-```
-
-Изменение параметра:
-
-```
-http://example.com/download?file=../../../../etc/passwd
-```
-
-### Пример 2: Загрузка аватара
-
-```
-http://example.com/upload?file=user.jpg
-```
-
-Изменение:
-
-```
-http://example.com/upload?file=../../../../etc/passwd
-```
-
-### Пример 3: Отображение изображений
-
-```
-http://example.com/images?image=vacation.jpg
-```
-
-Изменение:
-
-```
-http://example.com/images?image=../../../../etc/shadow
-```
-
-### Пример 4: API-доступ к файлам
-
-```
-http://example.com/api/download?path=reports/january.pdf
-```
-
-Изменение:
-
-```
-http://example.com/api/download?path=../../../../etc/passwd
-```
-
-## Как искать уязвимость Path Traversal
-
-### 1. Анализ параметров URL
-
-Проверьте параметры:
-
-- `file`, `path`, `image`, `download`, `upload`, `url` и др.
-
-Примеры:
+Приложение позволяет пользователю скачать отчёт:
 
 ```
 http://example.com/download?file=report.pdf
-http://example.com/api/file?path=images/vacation.jpg
 ```
 
-### 2. Манипуляции с параметрами
+Ожидается, что путь на сервере будет:  
+`/var/www/app/reports/report.pdf`
 
-Пробуйте такие запросы:
-
-```
-http://example.com/download?file=../../../../etc/passwd
-http://example.com/download?file=../../../etc/shadow
-```
-
-### 3. URL-кодирование
-
-Проверьте:
+Атакующий подставляет:
 
 ```
-http://example.com/download?file=%2e%2e%2f%2e%2e%2fetc%2fpasswd
+http://example.com/download?file=../../../../etc/shadow
 ```
 
-### 4. Автоматизированные инструменты
+Если сервер не фильтрует путь, он попытается открыть `/etc/shadow`.
 
-Используйте:
+### Пример 2: Просмотр изображений
 
-- Burp Suite
-- OWASP ZAP
-- Nikto
-- DirBuster
+```
+http://example.com/show?img=photo.jpg
+```
+
+Злоумышленник подставляет:
+
+```
+http://example.com/show?img=../../../.env
+```
+
+Это может раскрыть переменные окружения, включая ключи и пароли.
+
+### Пример 3: API-доступ к произвольным документам
+
+API принимает путь:
+
+```
+POST /api/get-document
+BODY: { "path": "invoices/2023.pdf" }
+```
+
+Атакующий:
+
+```json
+{
+  "path": "../../config/database.yml"
+}
+```
+
+Результат — раскрытие файла конфигурации базы данных.
+
+### Пример 4: Загрузка файлов
+
+```
+POST /upload?file=myphoto.png
+```
+
+Злоумышленник:
+
+```
+POST /upload?file=../../../../var/www/html/shell.php
+```
+
+Если файл сохраняется без валидации пути — возможна загрузка WebShell и выполнение команд.
+
+---
+
+## Как находить уязвимость Path Traversal
+
+### Шаг 1: Определение потенциальных точек
+
+Проверьте параметры, связанные с доступом к файлам:
+
+- `file=`, `path=`, `img=`, `template=`, `name=`, `download=`, `upload=`, `url=`
+
+Эти параметры могут встречаться в URL, теле POST-запросов или JSON.
+
+### Шаг 2: Подстановка полезных нагрузок
+
+Пробуйте вставить типичные payload:
+
+- `../etc/passwd`
+- `../../../../windows/win.ini`
+- `%2e%2e%2f%2e%2e%2fetc%2fpasswd`
+- `%252e%252e%252fetc%252fpasswd` — двойное кодирование
+
+Следите за реакцией сервера:  
+- ошибки (500, 403, 404);
+- неожиданные данные;
+- утечки системных файлов.
+
+### Шаг 3: Использование словарей и fuzzing
+
+Применяйте инструменты:
+
+- **SecLists** (набор `path-traversal.txt`);
+- **ffuf**, **Burp Intruder**, **dirsearch** — для автоматизации перебора.
+
+### Шаг 4: Проверка поведения с символическими ссылками
+
+Если есть возможность загрузки файлов — попробуйте загрузить символическую ссылку на файл, например:
+
+```bash
+ln -s /etc/passwd symlink.txt
+```
+
+и загрузить `symlink.txt` как изображение или документ.
+
+### Шаг 5: Логические тесты
+
+Иногда стоит попробовать переходы вверх в пути:
+
+- `..%5c..%5c..%5c` (Windows)
+- `/../../../../../proc/self/environ`
+
+Или проверить, может ли сервер раскрыть `.git/config`, `.htaccess`, `WEB-INF/web.xml`.
+
+---
 
 ## Методы защиты от Path Traversal
 
@@ -194,7 +225,46 @@ allowed_files = ['report.pdf', 'image.jpg']
 if user_input not in allowed_files:
     raise ValueError("Invalid file access attempt")
 ```
+---
+
+## Возможные обходы защит
+
+### 1. Байпас фильтрации `../`
+
+Если фильтруется `../`, попробуйте:
+
+- `..%2f`, `..%5c`, `.%2e/`
+- Двойное кодирование: `%252e%252e%252f`
+- Юникод: `..%c0%af`, `..%e0%80%af`
+
+### 2. Обход реального пути
+
+Если используется `realpath`, но нет проверки принадлежности директории, это бесполезно.
+
+```python
+# Неправильно:
+path = os.path.realpath("/uploads/" + user_input)
+```
+
+Если `user_input = ../../etc/passwd`, путь всё равно будет валиден.
+
+### 3. Символические ссылки
+
+Атакующий может загрузить symlink на системный файл:
+
+```bash
+ln -s /etc/passwd fake.jpg
+```
+
+И передать `fake.jpg` в параметре — если приложение работает с symlink без проверки.
+
+### 4. Случайная ошибка разработчика
+
+- Использование `os.path.join()` без проверки `startswith()` на базовую директорию.
+- Ошибки в normalize path — например, замена `../` на пустую строку, не предотвращает `../../../../etc/passwd`.
+
+---
 
 ## Заключение
 
-**Path Traversal** — серьёзная уязвимость, способная привести к утечке данных и компрометации системы. 
+Path Traversal — критическая уязвимость. Даже при применении защит могут оставаться лазейки, особенно если защита реализована поверхностно или с ошибками.
