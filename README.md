@@ -29,6 +29,7 @@
 * [Цифровые сертификаты в SSL/TLS](/WEB/Digital%certificates%in%SSL_TLS.md)
 * [Отказ в обслуживании (Denial of Service SC10:2025, DoS) в смарт-контрактах](/WEB/DOS_Attack_Smart-Contracts.md)
 * [Уязвимости контроля доступа в смарт-контрактах (SC01:2025)](/WEB/Access_Control_Vulnerabilities_in_Smart_Contracts.md)
+* [Настройка и безопасная конфигурация сервера APACHE](/WEB/secure_apache_configuration.md)
 
 ### Форензика
 * [Основные этапы процесса реагирования на инциденты ИБ](/Forensic/Основные%20этапы%20процесса%20реагирования%20на%20инциденты%20ИБ.md)
