@@ -1156,7 +1156,6 @@ sudo tail -n 50 /var/log/syslog | grep apparmor
 В сравнении с NGINX, Apache предлагает большую гибкость для динамических приложений, но требует внимательной настройки. Предложенная конфигурация делает Apache надёжным выбором для безопасного хостинга, обеспечивая баланс между производительностью, безопасностью и простотой управления. Регулярный аудит логов, обновления и тестирование защиты помогут поддерживать сервер в актуальном и защищённом состоянии.
 
 ## Список источников
-7. Positive Technologies. Актуальные киберугрозы: итоги 2023 года. 
 1.	Apache HTTP Server Documentation. URL: https://httpd.apache.org/docs/
 2.	Ubuntu Server Guide. URL: https://ubuntu.com/server/docs
 3.	Let’s Encrypt Documentation. URL: https://letsencrypt.org/docs/
@@ -1170,6 +1169,6 @@ sudo tail -n 50 /var/log/syslog | grep apparmor
 11.	Как установить и настроить веб-сервер Apache. URL: https://selectel.ru/blog/tutorials/how-to-install-and-configure-apache-web-server/
 12.	Защита веб-серверов от XSS и SQL-инъекций. URL: https://support.kaspersky.com/help/Corporate_App_Catalog/TR1/ru-RU/248893.htm
 13.	Оптимизация Apache для высокой производительности. URL: https://habr.com/ru/articles/148489/
-14.	Анализ логов Apache для обеспечения безопасности. URL: https:// habr.com/ru/sandbox/21382/
-15.	Безопасность веб-серверов с mod_rewrite. URL: https://habr.com/ru/ articles/509122/
-16.	Лучшие практики SSL/TLS для веб-серверов. URL: https://habr.com/ ru/companies/globalsign/articles/414405/
+14.	Анализ логов Apache для обеспечения безопасности. URL: https://habr.com/ru/sandbox/21382/
+15.	Безопасность веб-серверов с mod_rewrite. URL: https://habr.com/ru/articles/509122/
+16.	Лучшие практики SSL/TLS для веб-серверов. URL: https://habr.com/ru/companies/globalsign/articles/414405/
