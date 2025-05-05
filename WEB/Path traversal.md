@@ -72,6 +72,8 @@ http://example.com/download?file=../../../../etc/shadow
 
 Если сервер не фильтрует путь, он попытается открыть `/etc/shadow`.
 
+![image](https://github.com/AnaktaCTF/CTFReports/blob/main/4Tizi/%D0%9E%D1%82%D1%87%D0%B5%D1%82%202025-05-05/Photo%202025-05-05/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-05-05%20145245.png)
+
 ### Пример 2: Просмотр изображений
 
 ```
@@ -85,8 +87,6 @@ http://example.com/show?img=../../../.env
 ```
 
 Это может раскрыть переменные окружения, включая ключи и пароли.
-
-![image](https://github.com/AnaktaCTF/CTFReports/blob/main/4Tizi/%D0%9E%D1%82%D1%87%D0%B5%D1%82%202025-05-05/Photo%202025-05-05/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-05-05%20145245.png)
 
 ### Пример 3: API-доступ к произвольным документам
 
