@@ -9,6 +9,7 @@
 
 ### Криптография
 * [Атаки на криптосистемы, основанные на эллиптических кривых (ECC)](Cryptography/ECC.md)
+* [Практическая реализация Padding Oracle Attack в CBC-режиме на Python](/Cryptography/Padding_Oracle_Attack.md)
 
 ### Реверс-инжиниринг
 * [Автоматизация статического анализа бинарных файлов с помощью Radare2 и r2pipe на Python](Reverse/python_static_analysis.md)
