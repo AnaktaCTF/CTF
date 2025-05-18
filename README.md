@@ -80,6 +80,7 @@
 * [Введение в fuzzing](Misc/fuzzing.md)
 * [Разработка эксплойтов для современных систем Windows](Misc/Exploit-Development-ModernWindowsSystems.md)
 * [Протокол RPC](/Misc/RPC_Protocol.md)
+* [Основы Active Directory](/Misc/Active_Directory.md)
 
 ### WriteUps
 * [WriteUp с Capture the Intruder (CTI)](/WriteUps/CTI_writeup.md)  
