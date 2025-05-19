@@ -15,6 +15,7 @@
 * [Автоматизация статического анализа бинарных файлов с помощью Radare2 и r2pipe на Python](Reverse/python_static_analysis.md)
 * [Обход лицензирования и патчинг в CTF](Reverse/program_patching.md)
 * [Автоматизация реверс-инжиниринга с помощью Angr](/Reverse/AutomatingReverseEngineeringwithAngr.md)
+* [Динамическая инструментализация приложений с помощью Frida и Python](/Reverse/Frida_Python_Instrumentation.md)
   
 ### WEB
 * 🌐 [Введение в Web.](/WEB/introduction_to_the_Web.md)  
